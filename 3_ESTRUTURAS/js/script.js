@@ -61,7 +61,7 @@ console.warn("aviso!")
 const m = 10;
 
 if (m > 5) {
-    console.log("M é maior que 5!");
+    console.log("m é maior que 5!");
 }
 
 const user = "Alex";
@@ -93,4 +93,49 @@ if (q > 5 && w > 20) {
     console.log("Número mais altos!")
 } else {
     console.log("Os números não são mais altos!")
+}
+
+// 9 - else if
+if (1 > 2) {
+    console.log("Teste")
+} else if (2 > 3) {
+    console.log("Teste 2")
+} else if (5 > 1) {
+    console.log("Agora sim")
+}
+
+const userName = "Alex"
+const userAge = 37
+
+if (userName === "Pedro") {
+    console.log("Bem vindo Pedro!")
+} else if (userName === "Alex" && userAge === 37) {
+    console.log(`Olá Alex, você tem ${userAge} anos!`)
+} else {
+    console.log("Nenhuma condição aceita!")
+}
+
+// 10 - while
+let p = 0
+
+while (p < 5) {
+    console.log(`Repetindo ${p}`)
+    p = p + 1
+}
+
+// loop infinito
+// let x = 10
+
+// while (x > 5) {
+//     console.log(`Imprimindo ${x}`)
+// }
+
+// 12 - for
+for (let t = 0; t < 10; t++) {
+    console.log("Repetindo algo..")
+}
+
+let r = 10
+for (r; r > 0; r = r - 1) {
+    console.log(`O r está diminuindo: ${r}`)
 }
